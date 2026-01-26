@@ -1,0 +1,11 @@
+<h1>Список парфумів</h1>
+<ul>
+    {% for perfume in perfumes %}
+        <li>
+            <strong>{{ perfume.name }}</strong> — {{ perfume.price }} грн.
+            <p>{{ perfume.description }}</p>
+        </li>
+    {% empty %}
+        <li>Парфумів поки немає.</li>
+    {% endfor %}
+</ul>

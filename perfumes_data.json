@@ -1,0 +1,84 @@
+[
+  {
+    "model": "perfume.manufacturer",
+    "pk": 1,
+    "fields": {
+      "name": "Dior",
+      "country": "France"
+    }
+  },
+  {
+    "model": "perfume.manufacturer",
+    "pk": 2,
+    "fields": {
+      "name": "Tom Ford",
+      "country": "USA"
+    }
+  },
+  {
+    "model": "perfume.manufacturer",
+    "pk": 3,
+    "fields": {
+      "name": "Chanel",
+      "country": "France"
+    }
+  },
+  {
+    "model": "perfume.manufacturer",
+    "pk": 4,
+    "fields": {
+      "name": "Maison Francis Kurkdjian",
+      "country": "France"
+    }
+  },
+  {
+    "model": "perfume.perfume",
+    "pk": 1,
+    "fields": {
+      "manufacturer": 1,
+      "name": "Sauvage",
+      "price": "120.50",
+      "description": "Свіжий, деревний аромат для чоловіків."
+    }
+  },
+  {
+    "model": "perfume.perfume",
+    "pk": 2,
+    "fields": {
+      "manufacturer": 2,
+      "name": "Lost Cherry",
+      "price": "350.00",
+      "description": "Насичений аромат вишні та гіркого мигдалю."
+    }
+  },
+  {
+    "model": "perfume.perfume",
+    "pk": 3,
+    "fields": {
+      "manufacturer": 3,
+      "name": "Coco Mademoiselle",
+      "price": "145.00",
+      "description": "Східний, амбровий аромат з нотами жасмину та троянди."
+    }
+  },
+  {
+    "model": "perfume.perfume",
+    "pk": 4,
+    "fields": {
+      "manufacturer": 4,
+      "name": "Baccarat Rouge 540",
+      "price": "420.00",
+      "description": "Унікальний аромат з нотами шафрану, жасмину та сірої амбри."
+    }
+  },
+  {
+    "model": "perfume.perfume",
+    "pk": 5,
+    "fields": {
+      "manufacturer": 2,
+      "name": "Tobacco Vanille",
+      "price": "310.00",
+      "description": "Теплий та пряний аромат з нотами тютюну та ванілі."
+    }
+  }
+]
