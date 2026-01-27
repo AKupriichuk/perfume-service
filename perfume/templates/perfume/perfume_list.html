@@ -1,11 +1,10 @@
-<h1>Список парфумів</h1>
-<ul>
-    {% for perfume in perfumes %}
-        <li>
-            <strong>{{ perfume.name }}</strong> — {{ perfume.price }} грн.
-            <p>{{ perfume.description }}</p>
-        </li>
-    {% empty %}
-        <li>Парфумів поки немає.</li>
-    {% endfor %}
-</ul>
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Статистика сервісу</h1>
+  <ul>
+    <li><strong>Кількість парфумів:</strong> {{ num_perfumes }}</li>
+    <li><strong>Кількість виробників:</strong> {{ num_manufacturers }}</li>
+    <li><strong>Кількість візитів:</strong> {{ num_visits }}</li>
+  </ul>
+{% endblock %}

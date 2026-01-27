@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import perfume_list
+from .views import index
 
 urlpatterns = [
-    path("catalog/perfumes/", perfume_list, name="index"), # Порожні лапки означають головну сторінку
+    path("", index), # Порожні лапки означають головну сторінку
 ]
