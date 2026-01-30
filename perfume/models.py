@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.urls.base import reverse
 
 
 class Manufacturer(models.Model):
@@ -16,6 +17,9 @@ class Perfume(models.Model):
     description = models.TextField()
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse("perfume_detail", kwargs={"pk": self.pk})
 
 
 class Perfumer(models.Model):
