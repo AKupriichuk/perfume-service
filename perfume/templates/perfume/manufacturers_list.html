@@ -2,12 +2,12 @@
 
 {% block content %}
   <h1>Manufacturer List</h1>
-  {% if manufacturer_list %}
+  {% if manufacturers %}
     <ul>
-      {% for manufacturer in manufacturer_list %}
+      {% for manufacturer in manufacturers %}
       <li>
-        <a href="{{ manufacturer.get_absolute_url }}">{{ manufacturer.name }}</a>
-        ({{manufacturer.country}})
+        {{ manufacturer.name }}
+        {{manufacturer.country}}
       </li>
       {% endfor %}
     </ul>
