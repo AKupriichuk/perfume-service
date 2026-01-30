@@ -1,17 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Perfume List</h1>
-  {% if perfumes %}
+  <h1>Manufacturer List</h1>
+  {% if manufacturer_list %}
     <ul>
-      {% for perfume in perfumes %}
+      {% for manufacturer in manufacturer_list %}
       <li>
-        {{ perfume.name }}
+        <a href="{{ manufacturer.get_absolute_url }}">{{ manufacturer.name }}</a>
+        ({{manufacturer.country}})
       </li>
       {% endfor %}
     </ul>
   {% else %}
-    <p>There are no perfume.</p>
+    <p>There are no manufacturer.</p>
   {% endif %}
   {% if is_paginated %}
   <ul class="pagination">
@@ -34,7 +35,6 @@
 
 
     {% endif %}
-  </ul>
-{% endif %}
-
+    </ul>
+  {% endif %}
 {% endblock %}

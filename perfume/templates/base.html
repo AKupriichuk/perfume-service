@@ -10,13 +10,17 @@
  <div id="sidebar">
    {% block sidebar %}
      <ul>
-       <li><a href="/">Home</a></li>
-       <li><a href="/blog/">Blog</a></li>
+        <li><a href="{/}">Головна</a></li>
+        <li><a href="/manufacturers">Виробники</a></li>
+        <li><a href="/perfume">Парфуми</a></li>
      </ul>
    {% endblock %}
  </div>
  <div id="content">
      {% block content %}{% endblock %}
+     {% block pagination %}
+       {% include "include/pagination.html" %}
+     {% endblock %}
  </div>
 </body>
 </html>
