@@ -1,3 +1,4 @@
+from django.http.response import HttpResponse
 from django.views import generic
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
@@ -40,3 +41,13 @@ class ManufacturerListView(generic.ListView):
     queryset = Manufacturer.objects.all()
     template_name = "perfume/manufacturers_list.html"
     paginate_by = 3
+
+
+def test_session_view(request):
+    request.session["test"] = "test session"
+    num_visits = request.session.get("num_visits", 0) + 1
+    request.session["num_visits"] = num_visits
+    return HttpResponse(
+        f"<h1>Session data: {request.session['test']}</h1>"
+        f"You have visited this page {num_visits} times"
+    )
