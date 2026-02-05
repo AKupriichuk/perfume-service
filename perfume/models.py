@@ -31,6 +31,9 @@ class Perfumer(models.Model):
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
 
+    class Meta:
+        ordering = ["last_name"]
+
 
 class Customer(AbstractUser):
     favourite_scent_family = models.CharField(max_length=400)
