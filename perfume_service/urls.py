@@ -21,4 +21,5 @@ from perfume.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('perfume.urls')),
+    path('registration/', include('django.contrib.auth.urls')),
 ]

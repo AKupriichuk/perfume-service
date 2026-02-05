@@ -6,9 +6,8 @@
     <ul>
       {% for manufacturer in manufacturers %}
       <li>
-        <a href="#">
+        <a href="{% url 'perfume:manufacturer_detail' manufacturer.id %}">
           {{ manufacturer.name }}
-          {{manufacturer.country}}
         </a>
       </li>
       {% endfor %}

@@ -80,5 +80,60 @@
       "price": "310.00",
       "description": "Теплий та пряний аромат з нотами тютюну та ванілі."
     }
+  },
+  {
+    "model": "perfume.perfumer",
+    "pk": 1,
+    "fields": {
+      "first_name": "Francis",
+      "last_name": "Kurkdjian",
+      "experience_years": 25,
+      "perfumes": "Baccarat Rouge 540",
+      "perfume": [4]
+    }
+  },
+  {
+    "model": "perfume.perfumer",
+    "pk": 2,
+    "fields": {
+      "first_name": "François",
+      "last_name": "Demachy",
+      "experience_years": 40,
+      "perfumes": "Sauvage",
+      "perfume": [1]
+    }
+  },
+  {
+    "model": "perfume.perfumer",
+    "pk": 3,
+    "fields": {
+      "first_name": "Louise",
+      "last_name": "Turner",
+      "experience_years": 20,
+      "perfumes": "Lost Cherry",
+      "perfume": [2]
+    }
+  },
+  {
+    "model": "perfume.perfumer",
+    "pk": 4,
+    "fields": {
+      "first_name": "Jacques",
+      "last_name": "Polge",
+      "experience_years": 35,
+      "perfumes": "Coco Mademoiselle",
+      "perfume": [3]
+    }
+  },
+  {
+    "model": "perfume.perfumer",
+    "pk": 5,
+    "fields": {
+      "first_name": "Olivier",
+      "last_name": "Gillotin",
+      "experience_years": 30,
+      "perfumes": "Tobacco Vanille",
+      "perfume": [5]
+    }
   }
 ]
