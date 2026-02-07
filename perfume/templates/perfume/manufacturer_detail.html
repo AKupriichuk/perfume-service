@@ -1,8 +1,0 @@
-{% extends "base.html" %}
-
-{% block content %}
-  <h1>{{ manufacturer.name }}</h1>
-
-  <p><strong>Country:</strong> {{manufacturer.country}}</p>
-  <a href="{% url 'perfume:manufacturers' %}" class="btn btn-secondary">Назад до списку</a>
-{% endblock %}
