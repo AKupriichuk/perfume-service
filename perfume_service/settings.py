@@ -64,6 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'perfume.context_processors.cfg_assets_root'
             ],
         },
     },
@@ -116,6 +117,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+ASSETS_ROOT = '/static/assets/'
 
 STATIC_URL = 'static/'
 
@@ -129,6 +135,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 AUTH_USER_MODEL = 'perfume.Customer'
 
+LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = "perfume:index"
 LOGOUT_REDIRECT_URL = "perfume:index"
 
