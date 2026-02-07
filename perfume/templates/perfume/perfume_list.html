@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Perfume List</h1>
+  {% if perfumes %}
+    <ul>
+      {% for perfume in perfumes %}
+      <li>
+        <a href="{% url 'perfume:perfume_detail' perfume.id %}">
+          {{ perfume.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no perfume.</p>
+{% endif %}
+{% endblock %}
