@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <h1>Perfumer List</h1>
+
+  <form action="" method="get" class="form-inline mb-3">
+    {{ search_form|crispy }}
+    <input type="submit" value="Search" class="btn btn-secondary ml-2">
+  </form>
+
+  <div class="mb-3">
+    <a href="{% url 'perfume:perfumer-create' %}" class="btn btn-primary">
+      + Create new perfumer
+    </a>
+  </div>
+
+  {% if perfumers %}
+    <ul>
+      {% for perfumer in perfumers %}
+      <li>
+        <a href="{% url 'perfume:perfumer_detail' perfumer.id %}">
+          {{ perfumer.first_name }} {{ perfumer.last_name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no perfumers found.</p>
+  {% endif %}
+{% endblock %}
