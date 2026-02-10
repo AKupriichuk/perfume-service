@@ -18,6 +18,20 @@ A web application for managing a perfumery database. The project allows users to
 * **Database**: SQLite3.
 * **Tools**: PyCharm, Git.
 
+## 🚀 Deployment
+
+The project is deployed and available at:
+[https://perfume-service-61ic.onrender.com](https://perfume-service-61ic.onrender.com)
+
+## 👤 Test Access
+
+You can use the following credentials to test the application:
+
+* **Username:** `tester_mate`
+* **Password:** `Mate_12345678`
+
+*Note: This user has access to the catalog and personal profile features.*
+
 ## Local Setup
 
 1. **Clone the repository**:
